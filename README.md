@@ -99,5 +99,14 @@ Press `<Space>` and pause to see available leader-key shortcuts.
 - C and C++: GCC/G++, Clangd, Clang Format, CMake, Ninja, GDB
 - Go: gopls and gofmt
 - Rust: rust-analyzer and rustfmt
+- JavaScript and TypeScript: TypeScript Language Server (ts_ls), Prettier, Node.js
 
 Tree-sitter parsers provide syntax highlighting. Run `:Lazy` to manage plugins.
+
+## Nix Flake
+
+This repository includes a `flake.nix` that bundles Neovim with all required language servers, formatters, linters, and runtime tools.
+
+- Run standalone: `nix run .`
+- Enter dev shell: `nix develop`
+- Use in NixOS / Home Manager: import as an input in `flake.nix` and use `inputs.<name>.packages.${system}.default`.

@@ -22,6 +22,7 @@ return {
         ts.install({
           "bash", "c", "cpp", "go", "json", "lua", "markdown",
           "markdown_inline", "python", "rust", "toml", "vim", "vimdoc", "yaml",
+          "javascript", "typescript", "tsx",
         })
       else
         vim.notify("tree-sitter-cli is not on PATH; Tree-sitter parsers were not installed", vim.log.levels.WARN)
