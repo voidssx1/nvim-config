@@ -11,20 +11,40 @@
       pkgs = nixpkgs.legacyPackages.${system};
 
       tools = with pkgs; [
+        # tree-sitter
         tree-sitter
+
+        # C / C++
         gcc
-        lua-language-server
         clang-tools
-        pyright
-        ruff
-        gopls
-        golangci-lint
+        cmake
+        ninja
+        gdb
+
+        # Rust
+        rustc
+        cargo
         rust-analyzer
         rustfmt
         clippy
+
+        # Go
+        go
+        gopls
+        golangci-lint
+
+        # Python
+        python3
+        pyright
+        ruff
+
+        # Lua
+        lua-language-server
+
+        # JavaScript / TypeScript
+        nodejs
         typescript-language-server
         prettier
-        nodejs
       ];
 
       nvim = pkgs.symlinkJoin {

@@ -97,8 +97,9 @@ Press `<Space>` and pause to see available leader-key shortcuts.
 
 - Python: Python 3, Pyright, Ruff
 - C and C++: GCC/G++, Clangd, Clang Format, CMake, Ninja, GDB
-- Go: gopls and gofmt
-- Rust: rust-analyzer and rustfmt
+- Go: Go, gopls, golangci-lint
+- Rust: Rustc, Cargo, rust-analyzer, rustfmt, Clippy
 - JavaScript and TypeScript: TypeScript Language Server (ts_ls), Prettier, Node.js
+- Lua: lua-language-server
 
 Tree-sitter parsers provide syntax highlighting. Run `:Lazy` to manage plugins.
